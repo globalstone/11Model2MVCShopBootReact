@@ -64,7 +64,7 @@ function Header() {
             </li>
           </ul>
           <form className="d-flex ml-auto">
-            <h4 style={{ color: 'whitesmoke' }}>{user?.userName ? `${user.userName}님 환영합니dd다.` : ''}</h4>
+            <h4 style={{ color: 'whitesmoke' }}>{user?.userName ? `${user.userName}님 환영합니다.` : ''}</h4>
             <button className="btn btn-secondary me-2" type="button" onClick={handleLogout}>Log out</button>
           </form>
         </div>
