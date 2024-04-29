@@ -50,7 +50,7 @@ const Main = () => {
       // 로그인이 성공하면 페이지 이동
       //window.location.href = 'http://192.168.0.17:8080/main.jsp';
       setUser(response.data);
-      history.push('/welcome');
+      history.push('/getuser');
     })
     .catch(error => {
       // 서버에서 예외를 받은 경우

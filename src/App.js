@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Login from './main/main';
 import Welcome from './index/wellcome';
 import Main from './main/main';
+import getUser from './user/getUser'
 import { UserProvider } from './user/UserContext'; // UserProvider 추가
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" exact component={Login} />
           <Route path="/welcome" component={Welcome} />
           <Route path="/main" component={Main} /> {/* 추가적으로 Main에 대한 Route 설정 */}
+          <Route path="/getuser" component={getUser} /> {/* 추가적으로 Main에 대한 Route 설정 */}
         </UserProvider>
       </Router>
     </div>
